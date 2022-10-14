@@ -48,28 +48,28 @@
 ### [JEST](https://jestjs.io/)
 
 - Install
+  ```
+  npm i jest --global
 
-```
-npm i jest --global
+  # Add dev dependency
+  npm i --save-dev jest 
 
-# Add dev dependency
-npm i --save-dev jest
-
-# types of jest API
-npm i @types/jest
-```
-
+  # types of jest API 
+  npm i @types/jest
+  ```
 - init
-
-```
-jest --init
-```
+  ```
+  jest --init
+  ```
 
 - setting
-
-  - 자동 테스트
+  #### 자동 테스트
     `package.json - scripts`에서 `jest --watchAll`로 수정하고,
     터미널에 `npm run test` 입력하면 파일 저장될 때 마다 **전체 테스트 코드 실행**
 
-  - 최근 커밋 이력 기점으로 이후 수정된 코드만 자동테스트
-    `jest --watch`만 하면 된다.
+  #### 최근 커밋 이력 기점으로 이후 수정된 코드만 자동테스트
+  `jest --watch`만 하면 된다.
+
+
+
+
