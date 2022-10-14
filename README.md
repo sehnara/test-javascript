@@ -42,6 +42,15 @@
 ---
 ### [JEST](https://jestjs.io/)
 
+- Install
+```
+npm i jest --global
+```
+- init
+```
+jest --init
+```
+
 
 
 
