@@ -43,19 +43,19 @@
 ### [JEST](https://jestjs.io/)
 
 - Install
-```
-npm i jest --global
+  ```
+  npm i jest --global
 
-# Add dev dependency
-npm i --save-dev jest 
+  # Add dev dependency
+  npm i --save-dev jest 
 
-# types of jest API 
-npm i @types/jest
-```
+  # types of jest API 
+  npm i @types/jest
+  ```
 - init
-```
-jest --init
-```
+  ```
+  jest --init
+  ```
 
 - setting
   #### 자동 테스트
