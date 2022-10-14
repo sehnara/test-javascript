@@ -35,11 +35,13 @@
   - 문서화
 
 - **Test Pyramid**
-  : 어떤 분야든 개발자들이 공통적으로 해야하는 TEST 종류
-  : **Unit Test - Integration Test - E2E Test**
+  - 어떤 분야든 개발자들이 공통적으로 해야하는 TEST 종류
+  - **Unit Test - Integration Test - E2E Test**
   > **Unit Test** : 함수, 모듈, 클래스 등 딱 **하나**의 단위 테스트
-**Integration Test** : 단위들을 모아놨을 때 **상호작용** 잘하는 지 테스트
-**E2E Test** : 사용자 테스트, 사용자의 애플리케이션 사용 플로우에 따라 테스트
+
+  > **Integration Test** : 단위들을 모아놨을 때 **상호작용** 잘하는 지 테스트
+
+  > **E2E Test** : 사용자 테스트, 사용자의 애플리케이션 사용 플로우에 따라 테스트
 
 - TDD
 : Test driven development(테스트 주도 개발) - **개발 전 테스트 코드를 먼저 작성**
