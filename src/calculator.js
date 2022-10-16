@@ -9,7 +9,11 @@ class Calculator {
     this.value = 0;
   }
   add(a) {
-    this.value += a;
+    const sum = this.value + a;
+    if (sum > 100) {
+      throw new Error("value can not be greater than 100");
+    }
+    this.value = sum;
   }
   substract(a) {
     this.value -= a;
