@@ -86,5 +86,5 @@
   })
   ```
   
-  - **Asynchronous Test**
-  -
+- **Asynchronous Test**
+[비동기 테스트 코드](https://github.com/sehnara/test-javascript/blob/master/src/test/async.test.js) 참고
