@@ -47,7 +47,7 @@
 
 ### [JEST](https://jestjs.io/)
 
-- Install
+- **Install**
 
   ```
   npm i jest --global
@@ -59,13 +59,13 @@
   npm i @types/jest
   ```
 
-- init
+- **Init**
 
   ```
   jest --init
   ```
 
-- setting
+- **Setting**
 
   #### 자동 테스트
 
@@ -75,8 +75,9 @@
   #### 최근 커밋 이력 기점으로 이후 수정된 코드만 자동테스트
 
   `jest --watch`만 하면 된다.
+  
 
-- error test
+- **Error Test**
   - 에러가 날 경우까지 고려하여 테스트 코드를 짜야 커버리지가 완전해진다. 
   ```
   it('method...', () => {
@@ -85,4 +86,6 @@
     }).toThrow(error message);
   })
   ```
-
+  
+- **Asynchronous Test**
+  - [비동기 테스트 코드](https://github.com/sehnara/test-javascript/blob/master/src/test/async.test.js) 참고
