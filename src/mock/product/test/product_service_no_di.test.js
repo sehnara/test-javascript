@@ -6,13 +6,15 @@ jest.mock("../product_client"); // 1
 describe("ProductService", () => {
   // fetch와 같이 네트워크 환경에 영향받는 함수들은 이런식으로 한다.
   // 외부 상황에 영향 받지 않도록 하는게 포인트
-  const fetchItems = jest.fn(async () => [ // 2
+  const fetchItems = jest.fn(async () => [
+    // 2
     { item: "Milk", available: true },
     { item: "Banana", available: false },
   ]);
 
-  ProductClient.mockImplementation(() => { // 3. 연결
-    return { 
+  ProductClient.mockImplementation(() => {
+    // 3. 연결
+    return {
       fetchItems: fetchItems,
     };
   });
