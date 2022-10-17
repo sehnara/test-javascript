@@ -1,4 +1,4 @@
-const fetchProduct = require("../async");
+const fetchProduct = require("../../async");
 
 // 수동으로 done()함수를 발동하면 그 때 test 끝남
 describe("ASYNC", () => {

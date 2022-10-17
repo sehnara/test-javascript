@@ -1,4 +1,4 @@
-const Calculator = require("../calculator");
+const Calculator = require("../../calculator");
 let calculator;
 beforeEach(() => {
   calculator = new Calculator();
