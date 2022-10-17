@@ -89,3 +89,22 @@
   
 - **Asynchronous Test**
   - [비동기 테스트 코드](https://github.com/sehnara/test-javascript/blob/master/src/test/async.test.js) 참고
+
+- **Mock vs Stub**
+
+- **Principle Of The Good Testing**
+  - 한 번 작성한 테스트 코드는 영원히 **유지보수**해야한다. 
+  - 내부 구현 사항은 테스트 X, **인터페이스**를 통해 테스트 O
+  - **재사용성** 높이기 => 테스트용 클래스 등을 새로 만들 수도 있다.
+  - **배포용** 코드와 분리
+  - 문서화
+
+- **Testing Structure**
+  1. **Before**
+    - beforeEach, beforeAll
+  2. **Test**
+    - Arrange, Given : 준비 단계, 재사용성 고려
+    - Act, When : 의도적으로 틀려라!
+    - Assert, Then 
+  3. **After**
+    - afterEach, afterAll
