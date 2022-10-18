@@ -1,31 +1,33 @@
 class Stack {
   constructor() {
-    this.arr = [];
-    this.length = 0
+    this.head = null;
+    this.length = 0;
   }
 
-  push(element){
-    if(!element && element !== 0){
-        throw new Error('there is no element!')
+  push(element) {
+    if (!element && element !== 0) {
+      throw new Error("there is no element!");
     }
-    this.arr[this.length] = element
-    this.length ++
+    const node = { element, prev: this.head };
+    this.head = node;
+    this.length++;
   }
 
-  pop(){
-    if(!this.length){
-        throw new Error('stack is Empty!')
+  pop() {
+    if (!this.length) {
+      throw new Error("stack is Empty!");
     }
-    const last = this.arr[this.length-1]
-    this.length--
-    return last
+    const last = this.head.element
+    this.head = this.head.prev
+    this.length--;
+    return last;
   }
 
-  peek(){
-    if(!this.length){
-        throw new Error('stack is Empty!')
+  peek() {
+    if (!this.length) {
+      throw new Error("stack is Empty!");
     }
-    return this.arr[this.length-1]
+    return this.head.element;
   }
 }
 

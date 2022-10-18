@@ -14,7 +14,6 @@ describe("stack test", () => {
     it("Push : number parameter", () => {
       stack.push(2);
       expect(stack.length).toBe(1);
-      expect(stack.arr[stack.arr.length - 1]).toBe(2);
     });
 
     it("Push : undefined", () => {
@@ -26,7 +25,6 @@ describe("stack test", () => {
     it("Push : 0", () => {
       stack.push(0);
       expect(stack.length).toBe(1);
-      expect(stack.arr[stack.arr.length - 1]).toBe(0);
     });
   });
 
