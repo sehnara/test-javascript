@@ -108,7 +108,8 @@
   3. **After**
       - afterEach, afterAll
 
-- **Test Priciple 1 : FIRST**
+- **Testing Principle**
+> Test Priciple 1 : FIRST
 
   - **F : Fast**
       : 테스트를 느리게 만드는 의존성 낮추기(네트워크, 파일, DB)
@@ -121,7 +122,7 @@
   - **T : Timely**
       : 배포나 코드 리뷰 전에 테스트 코드 짜기
 
-- **Test Principle 2 : Right-BICEP(테스트 범위)**
+> Test Principle 2 : Right-BICEP(테스트 범위)
 
     : **무엇을 테스트 해야하는가**에 대한 원칙
 
@@ -141,9 +142,11 @@
       : 성능 확인 테스트를 통해 정확한 수치로 확인
 
 
-- **Test Principle 3 : CORRECT(테스트 조건)**
-  >- **C : Conformance**
+> Test Principle 3 : CORRECT(테스트 조건)
+  
+  - **C : Conformance**
       : 특정 포맷 준수**(전화번호, 이메일, 아이디, 파일 확장자...)**
+      
   - **O : Ordering**
       : 순서 조건 확인(순서가 중요한 경우)
 
