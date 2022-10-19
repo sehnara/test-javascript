@@ -175,3 +175,9 @@
   - [Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
     : 내부구현 사항을 감추고 사용자 입장(인터페이스처럼)에서 테스팅하도록 하겠다는 철학을 가짐
     : **CRA**로 설치했으면 자동 설치, CRA로 안했으면 공식 문서 들어가서 설치
+### [Snapshot Test](https://jestjs.io/docs/snapshot-testing)
+  - **Install**
+    ```
+    # 스냅샷 테스트를 위해서 rendere api가 필요하다.
+    yarn add react-test-renderer --save-dev
+    ```
