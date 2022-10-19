@@ -142,10 +142,8 @@
 
 
 - **Test Principle 3 : CORRECT(테스트 조건)**
-  >
-  - **C : Conformance**
+  >- **C : Conformance**
       : 특정 포맷 준수**(전화번호, 이메일, 아이디, 파일 확장자...)**
-      
   - **O : Ordering**
       : 순서 조건 확인(순서가 중요한 경우)
 
@@ -166,6 +164,7 @@
   - **T : Time**
       : 상대, 절대, 동시의 일들에 대해
       (순서가 맞지 않을 때, 지나간 시간, 지역 시간...)
+  
 ---
 ### React Component Test
 
