@@ -44,9 +44,9 @@
 
 ---
 
-### [JEST](https://jestjs.io/)
+## [JEST](https://jestjs.io/)
 
-- **Install**
+### Install
 
   ```
   npm i jest --global
@@ -66,17 +66,17 @@
 
 - **Setting**
 
-  #### 자동 테스트
+  - **자동 테스트**
 
   `package.json - scripts`에서 `jest --watchAll`로 수정하고,
   터미널에 `npm run test` 입력하면 파일 저장될 때 마다 **전체 테스트 코드 실행**
 
-  #### 최근 커밋 이력 기점으로 이후 수정된 코드만 자동테스트
+  - **최근 커밋 이력 기점으로 이후 수정된 코드만 자동테스트**
 
   `jest --watch`만 하면 된다.
   
 
-- **Error Test**
+### Error Test
   - 에러가 날 경우까지 고려하여 테스트 코드를 짜야 커버리지가 완전해진다. 
   ```
   it('method...', () => {
@@ -86,19 +86,19 @@
   })
   ```
   
-- **Asynchronous Test**
+### Asynchronous Test
   - [비동기 테스트 코드](https://github.com/sehnara/test-javascript/blob/master/src/test/async.test.js) 참고
 
-- **Mock vs Stub**
+### Mock vs Stub
 
-- **Principle Of The Good Testing**
+### Principle Of The Good Testing
   - 한 번 작성한 테스트 코드는 영원히 **유지보수**해야한다. 
   - 내부 구현 사항은 테스트 X, **인터페이스**를 통해 테스트 O
   - **재사용성** 높이기 => 테스트용 클래스 등을 새로 만들 수도 있다.
   - **배포용** 코드와 분리
   - 문서화
 
-- **Testing Structure**
+### Testing Structure
   - **Before**
       - beforeEach, beforeAll
   - **Test**
@@ -170,9 +170,9 @@
         (순서가 맞지 않을 때, 지나간 시간, 지역 시간...)
   
 ---
-### React Component Test
+## React Component Test
 
-- **Library** 
+### Library
   - [Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
     : 내부구현 사항을 감추고 사용자 입장(인터페이스처럼)에서 테스팅하도록 하겠다는 철학을 가짐
     : **CRA**로 설치했으면 자동 설치, CRA로 안했으면 공식 문서 들어가서 설치
