@@ -42,29 +42,28 @@
   - **TDD(테스트 범위에 맞게 코드를 쓰고 실패, 성공 확인하는 것을 반복하면 하나의 기능을 만든다) -> Refactoring(코드를 조금씩 수정)**
   - **사용자 배포 또는 코드 리뷰 전에 테스트 코드를 꼭 작성** 그리고 이를 통해 좋은 **문서화**에 도움이 된다.
 
----
 
 ## [JEST](https://jestjs.io/)
 
 ### Install
 
-  ```
-  npm i jest --global
+    ```
+    npm i jest --global
 
-  # Add dev dependency
-  npm i --save-dev jest
+    # Add dev dependency
+    npm i --save-dev jest
 
-  # types of jest API
-  npm i @types/jest
-  ```
+    # types of jest API
+    npm i @types/jest
+    ```
 
-- **Init**
+### Init
 
   ```
   jest --init
   ```
 
-- **Setting**
+### Setting
 
   - **자동 테스트**
 
@@ -75,7 +74,7 @@
 
   `jest --watch`만 하면 된다.
   
-
+---
 ### Error Test
   - 에러가 날 경우까지 고려하여 테스트 코드를 짜야 커버리지가 완전해진다. 
   ```
@@ -90,7 +89,7 @@
   - [비동기 테스트 코드](https://github.com/sehnara/test-javascript/blob/master/src/test/async.test.js) 참고
 
 ### Mock vs Stub
-
+---
 ### Principle Of The Good Testing
   - 한 번 작성한 테스트 코드는 영원히 **유지보수**해야한다. 
   - 내부 구현 사항은 테스트 X, **인터페이스**를 통해 테스트 O
