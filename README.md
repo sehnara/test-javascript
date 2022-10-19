@@ -142,7 +142,7 @@
 
 
 - **Test Principle 3 : CORRECT(테스트 조건)**
-
+  >
   - **C : Conformance**
       : 특정 포맷 준수**(전화번호, 이메일, 아이디, 파일 확장자...)**
       
@@ -172,3 +172,4 @@
 - **Library** 
   - [Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
     : 내부구현 사항을 감추고 사용자 입장(인터페이스처럼)에서 테스팅하도록 하겠다는 철학을 가짐
+    : **CRA**로 설치했으면 자동 설치, CRA로 안했으면 공식 문서 들어가서 설치
