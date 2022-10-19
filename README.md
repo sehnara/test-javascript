@@ -169,3 +169,6 @@
 ---
 ### React Component Test
 
+- **Library** 
+  - [Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+    : 내부구현 사항을 감추고 사용자 입장(인터페이스처럼)에서 테스팅하도록 하겠다는 철학을 가짐
