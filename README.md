@@ -99,74 +99,74 @@
   - 문서화
 
 - **Testing Structure**
-  1. **Before**
+  - **Before**
       - beforeEach, beforeAll
-  2. **Test**
+  - **Test**
       - Arrange, Given : 준비 단계, 재사용성 고려
       - Act, When : 의도적으로 틀려라!
       - Assert, Then 
-  3. **After**
+  - **After**
       - afterEach, afterAll
 
 - **Testing Principle**
 > Test Priciple 1 : FIRST
 
-  - **F : Fast**
-      : 테스트를 느리게 만드는 의존성 낮추기(네트워크, 파일, DB)
-  - **I : Isolated**
-      : 독립적으로 테스트 관리
-  - **R : Repeatable**
-      : 반복해도 결과값이 같도록
-  - **S : Self-Validating**
-      : 테스트 하나에 평가까지
-  - **T : Timely**
-      : 배포나 코드 리뷰 전에 테스트 코드 짜기
+    - **F : Fast**
+        : 테스트를 느리게 만드는 의존성 낮추기(네트워크, 파일, DB)
+    - **I : Isolated**
+        : 독립적으로 테스트 관리
+    - **R : Repeatable**
+        : 반복해도 결과값이 같도록
+    - **S : Self-Validating**
+        : 테스트 하나에 평가까지
+    - **T : Timely**
+        : 배포나 코드 리뷰 전에 테스트 코드 짜기
 
 > Test Principle 2 : Right-BICEP(테스트 범위)
 
     : **무엇을 테스트 해야하는가**에 대한 원칙
 
-  - **B : Boundary Conditions**
-      : 모든 케이스를 염두해야한다.**(틀린 인풋, null, 특수문자, 틀린 이메일, 작은 숫자, 큰 숫자, 중복, 틀린 순서)**
-      
-  - **I : Inverse Relationship**
-      : 역관계를 적용하여 결과값이 **일관적**인지 확인(덧셈 -> 뺄셈, 추가 -> 제거)
+    - **B : Boundary Conditions**
+        : 모든 케이스를 염두해야한다.**(틀린 인풋, null, 특수문자, 틀린 이메일, 작은 숫자, 큰 숫자, 중복, 틀린 순서)**
 
-  - **C : Cross Check**
-      : 여러 수단(다른 알고리즘, 라이브러리) 등을 이용해 체크
+    - **I : Inverse Relationship**
+        : 역관계를 적용하여 결과값이 **일관적**인지 확인(덧셈 -> 뺄셈, 추가 -> 제거)
 
-  - **E : Error Conditions**
-      : 불행한 경로**(네트워크 에러, 메모리 부족, 데이터베이스 중지)**에 대해 우아하게 체크하는가?
+    - **C : Cross Check**
+        : 여러 수단(다른 알고리즘, 라이브러리) 등을 이용해 체크
 
-  - **P : Performance Characteristic**
-      : 성능 확인 테스트를 통해 정확한 수치로 확인
+    - **E : Error Conditions**
+        : 불행한 경로**(네트워크 에러, 메모리 부족, 데이터베이스 중지)**에 대해 우아하게 체크하는가?
+
+    - **P : Performance Characteristic**
+        : 성능 확인 테스트를 통해 정확한 수치로 확인
 
 
 > Test Principle 3 : CORRECT(테스트 조건)
   
-  - **C : Conformance**
-      : 특정 포맷 준수**(전화번호, 이메일, 아이디, 파일 확장자...)**
-      
-  - **O : Ordering**
-      : 순서 조건 확인(순서가 중요한 경우)
+    - **C : Conformance**
+        : 특정 포맷 준수**(전화번호, 이메일, 아이디, 파일 확장자...)**
 
-  - **R : Range**
-      : 범위가 벗어났을 때 테스트 코드 작성
+    - **O : Ordering**
+        : 순서 조건 확인(순서가 중요한 경우)
 
-  - **R : Reference**
-      : 외부 의존성 유무, 특정한 조건의 유무
-      (A함수 발동 후, B함수 발동을 해야한다면, 그렇게 되지 않았을 때와 그렇게 됐을 때 모두 테스트를 짜야한다)
+    - **R : Range**
+        : 범위가 벗어났을 때 테스트 코드 작성
 
-  - **E : Existence**
-      : 값이 존재하는 지(null, undefined, '', 0)
-  
-  - **C : Cardinality**
-      : **0-1-N** 법칙에 따라 검증
-      (하나도 없을 때, 하나만 있을 때, 여러 개 있을 때)
+    - **R : Reference**
+        : 외부 의존성 유무, 특정한 조건의 유무
+        (A함수 발동 후, B함수 발동을 해야한다면, 그렇게 되지 않았을 때와 그렇게 됐을 때 모두 테스트를 짜야한다)
 
-  - **T : Time**
-      : 상대, 절대, 동시의 일들에 대해
-      (순서가 맞지 않을 때, 지나간 시간, 지역 시간...)
+    - **E : Existence**
+        : 값이 존재하는 지(null, undefined, '', 0)
+
+    - **C : Cardinality**
+        : **0-1-N** 법칙에 따라 검증
+        (하나도 없을 때, 하나만 있을 때, 여러 개 있을 때)
+
+    - **T : Time**
+        : 상대, 절대, 동시의 일들에 대해
+        (순서가 맞지 않을 때, 지나간 시간, 지역 시간...)
   
 ---
 ### React Component Test
