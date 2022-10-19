@@ -178,6 +178,18 @@
 ### [Snapshot Test](https://jestjs.io/docs/snapshot-testing)
   - **Install**
     ```
-    # 스냅샷 테스트를 위해서 rendere api가 필요하다.
     yarn add react-test-renderer --save-dev
     ```
+   
+    ```
+    npm run test -- -u
+    # 스냡샷 테스트 이후에 고의적으로 컴포넌트 요소를 변경했을 때, 이 명렬어를 통해 스냡샷으로 업데이트할 수 있다.
+    ```
+- **Basic Code Structure**
+  ```
+  it("renders", () => {
+    // 스냅샷 테스트
+    const component = renderer.create(<HabitAddForm onAdd={jest.fn()} />);
+    expect(component).toMatchSnapshot();
+  });
+  ```
