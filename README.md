@@ -195,7 +195,12 @@
   ```
 ---
 ## E2E Test(UI Test)
-  : Snapshot Test, Unit Test는 로직을 테스팅하는 것
+  : **Snapshot Test**, **Unit Test**는 로직을 테스팅하는 것
   : E2E Test를 통해 User Interface 테스트가 가능하다
   
-  ### Cypress
+### Cypress
+
+  - **Install**
+    ```
+    npm i cypress
+    ```
