@@ -202,5 +202,9 @@
 
   - **Install**
     ```
-    npm i cypress
+    npm install cypress --save-dev
+    ```
+  - **Open**
+    ```
+    npx cypress open
     ```
